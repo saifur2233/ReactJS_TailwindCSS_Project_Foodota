@@ -1,0 +1,62 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "category": "Pizza",
+    "name": "Tasty Food Pizza",
+    "price": 420,
+    "stock": 20,
+    "ratings": 5,
+    "description": "Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique.",
+    "img": "https://i.ibb.co/rcgVsHk/1.jpg"
+  },
+  {
+    "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+    "category": "Pizza",
+    "name": "Chickenzilla Pizza",
+    "price": 420,
+    "stock": 20,
+    "ratings": 5,
+    "description": "Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique.",
+    "img": "https://i.ibb.co/7VvXfg6/2.jpg"
+  },
+  {
+    "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+    "category": "Fast Food",
+    "name": "Italian Hot Dog",
+    "price": 420,
+    "stock": 20,
+    "ratings": 5,
+    "description": "Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique.",
+    "img": "https://i.ibb.co/R47ZLk4/3.jpg"
+  },
+  {
+    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+    "category": "Drinks",
+    "name": "Arcadian Drinks",
+    "price": 420,
+    "stock": 20,
+    "ratings": 5,
+    "description": "Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique.",
+    "img": "https://i.ibb.co/wK3Vt1z/4.jpg"
+  },
+  {
+    "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+    "category": "Food",
+    "name": "Marshall Steak",
+    "price": 420,
+    "stock": 20,
+    "ratings": 5,
+    "description": "Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique.",
+    "img": "https://i.ibb.co/fGdkZRc/5.jpg"
+  },
+  {
+    "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+    "category": "Fast Food",
+    "name": "Tasty Burger",
+    "price": 420,
+    "stock": 20,
+    "ratings": 5,
+    "description": "Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Medium size special tikka heart pizza Green Peppers, Mushrooms, Onions, Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique. Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique.",
+    "img": "https://i.ibb.co/b1jC2Qj/6.jpg"
+  }
+]

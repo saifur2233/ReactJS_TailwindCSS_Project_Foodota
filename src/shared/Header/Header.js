@@ -105,6 +105,9 @@ const Header = () => {
             </li>
           </ul>
         </div>
+        <button className="btn btn-outline btn-secondary mx-5">
+          Order Now
+        </button>
       </div>
     </div>
   );

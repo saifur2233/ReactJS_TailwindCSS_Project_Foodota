@@ -4,7 +4,7 @@ import Loginimg from "../../assets/images/auth/login.png";
 import { AuthContext } from "../../context/UserContext";
 
 const Login = () => {
-  const { logIn } = useContext(AuthContext);
+  const { logIn, googleSignIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
@@ -27,6 +27,13 @@ const Login = () => {
       .catch(() => {
         setError("Eamil and Password not match!...");
       });
+  };
+
+  const handleGoogleSignin = () => {
+    googleSignIn().then((result) => {
+      const user = result.user;
+      navigate(from, { replace: true });
+    });
   };
 
   return (
@@ -73,7 +80,10 @@ const Login = () => {
                 Signup
               </Link>
             </p>
-            <button className="btn btn-outline btn-success">
+            <button
+              onClick={handleGoogleSignin}
+              className="btn btn-outline btn-success"
+            >
               Sign In with Google
             </button>
           </form>

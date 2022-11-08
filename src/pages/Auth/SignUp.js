@@ -87,9 +87,6 @@ const SignUp = () => {
                 Login
               </Link>
             </p>
-            <button className="btn btn-outline btn-success">
-              Sign Up with Google
-            </button>
           </form>
         </div>
       </div>
