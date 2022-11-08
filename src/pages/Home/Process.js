@@ -1,4 +1,7 @@
 import React from "react";
+import ProcessImg1 from "../../assets/images/home/process1.png";
+import ProcessImg2 from "../../assets/images/home/process2.png";
+import ProcessImg3 from "../../assets/images/home/process3.png";
 
 const Process = () => {
   return (
@@ -10,8 +13,9 @@ const Process = () => {
           tellus in metus vulputate eu scelerisque felis.
         </p>
       </div>
-      <div className="flex w-full">
+      <div className="flex w-full py-10">
         <div className="grid w-1/3 flex-grow card rounded-box place-items-center">
+          <img src={ProcessImg1} alt="Process01" />
           <h3 className="text-3xl font-bold">Select Location</h3>
           <p className="text-center">
             Non enim praesent elementum facilisis leo vel fringilla. Lectus
@@ -21,6 +25,7 @@ const Process = () => {
         </div>
         <div className="divider divider-horizontal"></div>
         <div className="grid w-1/3 flex-grow card rounded-box place-items-center">
+          <img src={ProcessImg2} alt="Process01" />
           <h3 className="text-3xl font-bold">Select menu</h3>
           <p className="text-center">
             Non enim praesent elementum facilisis leo vel fringilla. Lectus
@@ -30,6 +35,7 @@ const Process = () => {
         </div>
         <div className="divider divider-horizontal"></div>
         <div className="grid w-1/3 flex-grow card rounded-box place-items-center">
+          <img src={ProcessImg3} alt="Process01" />
           <h3 className="text-3xl font-bold">Wait for delivery</h3>
           <p className="text-center">
             Non enim praesent elementum facilisis leo vel fringilla. Lectus
