@@ -10,9 +10,11 @@ const ServiceDetails = () => {
         <img src={img} alt="ServiceDetails" />
       </figure>
       <div className="card-body">
-        <div className="flex justify-between">
-          <h2 className="card-title">{name}</h2>
-          <div className="badge badge-accent">Tk. {price}</div>
+        <div className="justify-start">
+          <h2 className="card-title text-3xl">{name}</h2>
+          <div className="badge badge-secondary my-5 p-3 text-white">
+            Tk. {price}
+          </div>
         </div>
         <p>{description}</p>
         <div className="card-actions flex justify-between">
