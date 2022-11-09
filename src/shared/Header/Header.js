@@ -19,6 +19,9 @@ const Header = () => {
       <li className="font-semibold">
         <Link to="/reviews">Reviews</Link>
       </li>
+      <li className="font-semibold">
+        <Link to="/blogs">Blogs</Link>
+      </li>
     </>
   );
   return (
@@ -84,10 +87,7 @@ const Header = () => {
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img
-                src="https://placeimg.com/80/80/people"
-                alt="Profile image"
-              />
+              <img src="https://placeimg.com/80/80/people" alt="Profile" />
             </div>
           </label>
           <ul
@@ -95,13 +95,13 @@ const Header = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a href="" className="justify-between">
+              <Link to="/" className="justify-between">
                 Profile
                 <span className="badge">New</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">Logout</a>
+              <Link to="/">Logout</Link>
             </li>
           </ul>
         </div>
