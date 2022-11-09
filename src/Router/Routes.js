@@ -5,6 +5,7 @@ import SignUp from "../pages/Auth/SignUp";
 import Blogs from "../pages/Blogs/Blogs";
 import Error404 from "../pages/Error404/Error404";
 import Home from "../pages/Home/Home";
+import CreateService from "../pages/Service/CreateService";
 import ServiceDetails from "../pages/Service/ServiceDetails";
 import Services from "../pages/Service/Services";
 
@@ -28,6 +29,10 @@ export const routes = createBrowserRouter([
       {
         path: "/services",
         element: <Services></Services>,
+      },
+      {
+        path: "/addservice",
+        element: <CreateService></CreateService>,
       },
       {
         path: "/services/:id",

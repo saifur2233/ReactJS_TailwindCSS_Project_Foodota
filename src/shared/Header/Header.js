@@ -11,10 +11,10 @@ const Header = () => {
         <Link to="/login">Login</Link>
       </li>
       <li className="font-semibold">
-        <Link to="/signup">SignUp</Link>
+        <Link to="/services">Services</Link>
       </li>
       <li className="font-semibold">
-        <Link to="/services">Services</Link>
+        <Link to="/addservice">Add Services</Link>
       </li>
       <li className="font-semibold">
         <Link to="/reviews">Reviews</Link>
@@ -64,7 +64,7 @@ const Header = () => {
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
       <div className="navbar-end">
-        <label tabIndex={0} className="btn btn-ghost btn-circle right-10">
+        {/* <label tabIndex={0} className="btn btn-ghost btn-circle right-10">
           <div className="indicator">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ const Header = () => {
             </svg>
             <span className="badge badge-sm indicator-item">8</span>
           </div>
-        </label>
+        </label> */}
 
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
