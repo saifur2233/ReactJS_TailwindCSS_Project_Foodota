@@ -1,26 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLoaderData } from "react-router-dom";
 
-const ServiceCard = ({ service }) => {
-  const { _id, name, price, ratings, img, description } = service;
+const ServiceDetails = () => {
+  const { _id, name, price, ratings, img, description } = useLoaderData();
+
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl">
+    <div className="card my-10 w-full bg-base-200 shadow-xl">
       <figure>
-        <img src={img} alt="Shoes" />
+        <img src={img} alt="ServiceDetails" />
       </figure>
       <div className="card-body">
         <div className="flex justify-between">
           <h2 className="card-title">{name}</h2>
           <div className="badge badge-accent">Tk. {price}</div>
         </div>
-        <p>
-          {description.length < 100
-            ? `${description}`
-            : `${description.substring(0, 99)}+'...`}
-        </p>
+        <p>{description}</p>
         <div className="card-actions flex justify-between">
-          <Link to={`/services/${_id}`}>
-            <button className="btn btn-secondary">View Details</button>
+          <Link to="/">
+            <button className="btn btn-secondary">Back to Home</button>
           </Link>
           <div className="rating rating-md mt-2">
             {Array.from({ length: ratings }).map((_, idx) => (
@@ -37,4 +34,4 @@ const ServiceCard = ({ service }) => {
   );
 };
 
-export default ServiceCard;
+export default ServiceDetails;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import ServiceCard from "../Service/ServiceCard";
 
 const HomePageServices = () => {
@@ -25,6 +26,13 @@ const HomePageServices = () => {
         {services.map((service) => (
           <ServiceCard key={service._id} service={service}></ServiceCard>
         ))}
+      </div>
+      <div className="my-10 flex justify-center">
+        <Link to="/services">
+          <button className="btn btn-accent text-white">
+            View All Services
+          </button>
+        </Link>
       </div>
     </div>
   );
