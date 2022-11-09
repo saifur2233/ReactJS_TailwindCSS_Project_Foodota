@@ -1,27 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/UserContext";
 
 const Header = () => {
+  const { user, logout } = useContext(AuthContext);
   const menuItems = (
     <>
       <li className="font-semibold">
         <Link to="/">Home</Link>
       </li>
       <li className="font-semibold">
-        <Link to="/login">Login</Link>
-      </li>
-      <li className="font-semibold">
-        <Link to="/services">Services</Link>
-      </li>
-      <li className="font-semibold">
-        <Link to="/addservice">Add Services</Link>
-      </li>
-      <li className="font-semibold">
-        <Link to="/reviews">Reviews</Link>
-      </li>
-      <li className="font-semibold">
         <Link to="/blogs">Blogs</Link>
       </li>
+      {user?.uid ? (
+        <>
+          <li className="font-semibold">
+            <Link to="/services">Services</Link>
+          </li>
+          <li className="font-semibold">
+            <Link to="/addservice">Add Services</Link>
+          </li>
+          <li className="font-semibold">
+            <Link to="/reviews">My Reviews</Link>
+          </li>
+          <li className="font-semibold">
+            <Link onClick={logout}>Logout</Link>
+          </li>
+        </>
+      ) : (
+        <li className="font-semibold">
+          <Link to="/login">Login</Link>
+        </li>
+      )}
     </>
   );
   return (
@@ -84,27 +94,29 @@ const Header = () => {
           </div>
         </label> */}
 
-        <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img src="https://placeimg.com/80/80/people" alt="Profile" />
-            </div>
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <Link to="/" className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">Logout</Link>
-            </li>
-          </ul>
-        </div>
+        {user?.uid && (
+          <div className="dropdown dropdown-end">
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img src="https://placeimg.com/80/80/people" alt="Profile" />
+              </div>
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <Link className="justify-between">
+                  {user?.uid && user?.email.slice(0, 10) + "..."}
+                  <span className="badge badge-accent text-white">Active</span>
+                </Link>
+              </li>
+              <li>
+                <Link onClick={logout}>Logout</Link>
+              </li>
+            </ul>
+          </div>
+        )}
         <button className="btn btn-outline btn-secondary mx-5">
           Order Now
         </button>

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
 
 const ServiceDetails = () => {
-  const { _id, name, price, ratings, img, description } = useLoaderData();
+  const { name, price, ratings, img, description } = useLoaderData();
 
   return (
     <div className="card my-10 w-full bg-base-200 shadow-xl">

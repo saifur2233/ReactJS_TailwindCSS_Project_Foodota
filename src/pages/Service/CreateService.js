@@ -16,8 +16,8 @@ const CreateService = () => {
           <img src={AddServiceImg} alt="Login" />
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <h1 className="text-5xl text-secondary font-bold text-center py-5">
-            Add New Service!
+          <h1 className="text-5xl text-secondary font-bold text-center pt-5">
+            Add Service!
           </h1>
           <form onSubmit={handleCreateService} className="card-body">
             <p className="text-center text-red-600">{error}</p>
