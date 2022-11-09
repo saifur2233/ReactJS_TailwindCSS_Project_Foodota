@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div>
       <HeroSection></HeroSection>
-      <Process></Process>
       <HomePageServices></HomePageServices>
+      <Process></Process>
     </div>
   );
 };

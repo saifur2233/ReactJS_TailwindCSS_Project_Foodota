@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={HeroImg} className="w-1/2 rounded-lg shadow-2xl" />
         <div>
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-5xl text-secondary font-bold">
             Order Healthy And Fresh Food Any Time
           </h1>
           <p className="py-6">
