@@ -24,9 +24,24 @@ const SignUp = () => {
     createUser(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
-        form.reset();
-        navigate("/");
+        const currentUser = {
+          email: user.email,
+        };
+        // Generate jwt token
+        fetch("http://localhost:5000/jwt", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(currentUser),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            // jwt token store in local storage
+            localStorage.setItem("foodota", data.token);
+            form.reset();
+            navigate("/");
+          });
       })
       .catch((error) => {
         setError(error.message);
