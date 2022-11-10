@@ -23,7 +23,7 @@ const CreateService = () => {
       description,
       img,
     };
-    fetch("http://localhost:5000/services", {
+    fetch("https://foodota-server.vercel.app/services", {
       method: "POST",
       headers: {
         "content-type": "application/json",

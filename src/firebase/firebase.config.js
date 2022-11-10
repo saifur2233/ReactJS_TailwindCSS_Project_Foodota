@@ -4,20 +4,14 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const API_KEY = process.env.APIKEY;
-const AUTH_DOMAIN = process.env.AUTH_DOMAIN;
-const PROJECT_ID = process.env.PROJECT_ID;
-const STROAGE_BUCKET = process.env.STROAGE_BUCKET;
-const MESSAGING_SENDERID = process.env.MESSAGING_SENDERID;
-const APPID = process.env.APPID;
 
 const firebaseConfig = {
-  apiKey: API_KEY,
-  authDomain: AUTH_DOMAIN,
-  projectId: PROJECT_ID,
-  storageBucket: STROAGE_BUCKET,
-  messagingSenderId: MESSAGING_SENDERID,
-  appId: APPID,
+  apiKey: "AIzaSyBGcssGxXoQisrBzcl7lZjI2Ko5ltgIZEA",
+  authDomain: "foodota-37385.firebaseapp.com",
+  projectId: "foodota-37385",
+  storageBucket: "foodota-37385.appspot.com",
+  messagingSenderId: "274493599706",
+  appId: "1:274493599706:web:675add68e9cb73b1f8dae3",
 };
 
 // Initialize Firebase

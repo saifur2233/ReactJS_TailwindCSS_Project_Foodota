@@ -1,7 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Loginimg from "../../assets/images/auth/login.png";
 import { AuthContext } from "../../context/UserContext";
+import PacmanLoader from "react-spinners/PacmanLoader";
+import Spinner from "../../shared/Spinner/Spinner";
 
 const Login = () => {
   const { logIn, googleSignIn } = useContext(AuthContext);
@@ -24,7 +26,7 @@ const Login = () => {
           email: user.email,
         };
         // Generate jwt token
-        fetch("http://localhost:5000/jwt", {
+        fetch("https://foodota-server.vercel.app/jwt", {
           method: "POST",
           headers: {
             "content-type": "application/json",
