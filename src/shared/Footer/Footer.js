@@ -17,7 +17,7 @@ const Footer = () => {
         <p className="text-2xl font-bold">
           Foodota Ltd.
           <br />
-          Providing reliable tech since 1992
+          Providing tasty foods since 1992
         </p>
       </div>
       <div>

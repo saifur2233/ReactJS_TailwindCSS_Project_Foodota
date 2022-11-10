@@ -11,8 +11,15 @@ const ReviewsRow = ({ review }) => {
         </div>
       </td>
       <td>{review?.email}</td>
-      <td>
-        <div style={{ overflowWrap: "break-word" }}>{review?.message}</div>
+      <td
+        style={{
+          width: "500px",
+          overflowWrap: "break-word",
+          wordWrap: "break-word",
+          wordBreak: "break-all",
+        }}
+      >
+        {review?.message}
       </td>
       <td>{review?.ratings}</td>
     </tr>

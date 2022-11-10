@@ -8,6 +8,37 @@ const CreateService = () => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
+    const category = form.category.value;
+    const price = form.price.value;
+    const ratings = form.ratings.value;
+    const description = form.description.value;
+    const img = "https://i.ibb.co/7VvXfg6/3.jpg";
+    console.log(name, category, price, ratings, description, img);
+
+    const serviceObj = {
+      name,
+      category,
+      price,
+      ratings,
+      description,
+      img,
+    };
+    fetch("http://localhost:5000/services", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(serviceObj),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.acknowledged) {
+          alert("Service added successfully");
+          form.reset();
+        }
+      })
+      .catch((error) => console.error(error));
   };
   return (
     <div className="hero py-10 bg-base-200">
@@ -43,48 +74,42 @@ const CreateService = () => {
                 className="input input-bordered"
               />
             </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Service Price</span>
-              </label>
-              <input
-                type="text"
-                placeholder="Price"
-                name="price"
-                className="input input-bordered"
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Rating</span>
-              </label>
-              <input
-                type="text"
-                placeholder="Rating"
-                name="rating"
-                className="input input-bordered"
-              />
+            <div className="flex">
+              <div className="form-control w-1/2">
+                <label className="label">
+                  <span className="label-text">Service Price</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Price"
+                  name="price"
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control w-1/2">
+                <label className="label">
+                  <span className="label-text">Rating</span>
+                </label>
+                <input
+                  type="number"
+                  min={1}
+                  max={5}
+                  defaultValue="5"
+                  placeholder="Rating"
+                  name="ratings"
+                  className="input input-bordered"
+                />
+              </div>
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Service Description</span>
               </label>
-              <input
-                type="text"
+              <textarea
+                className="textarea textarea-bordered"
                 placeholder="Service Description"
                 name="description"
-                className="input input-bordered"
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Service Description</span>
-              </label>
-              <input
-                type="file"
-                name="image"
-                className="file-input file-input-bordered file-input-accent w-full max-w-xs"
-              />
+              ></textarea>
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-secondary">Create</button>
