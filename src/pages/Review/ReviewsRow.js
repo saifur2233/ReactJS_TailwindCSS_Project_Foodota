@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaTrashAlt, FaPenSquare } from "react-icons/fa";
 const ReviewsRow = ({ review }) => {
   return (
     <tr>
@@ -22,6 +22,10 @@ const ReviewsRow = ({ review }) => {
         {review?.message}
       </td>
       <td>{review?.ratings}</td>
+      <td className="flex">
+        <FaPenSquare className="text-accent" size="md"></FaPenSquare>
+        <FaTrashAlt className="text-secondary" size="md"></FaTrashAlt>
+      </td>
     </tr>
   );
 };
